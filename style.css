@@ -216,6 +216,24 @@ p:last-child { margin-bottom: 0; }
   margin-top: 28px;
 }
 
+.hero-rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 18px;
+  font-family: var(--font-head);
+  font-weight: 700;
+  color: var(--ink);
+}
+.hero-rating .stars {
+  color: var(--yellow);
+  letter-spacing: 2px;
+  font-size: 1.1rem;
+}
+@media (max-width: 860px) {
+  .hero-rating { justify-content: center; }
+}
+
 .hero-art { justify-self: center; }
 .kiosk-illustration { width: min(360px, 90%); }
 
